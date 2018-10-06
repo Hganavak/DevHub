@@ -1,27 +1,77 @@
 # DevHub-Web
 
+The web component of the DevHub stack.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-## Development server
+## Planned Features
+	- Link to GitHub
+	- Based on SkillTree project
+	- Link to projects &&/|| individual commits for each skill
+	- Rank your skills in each area/developer summary
+	- CV
+	- Previous experience
+	- Cover letter
+	- When tagging code associate it with previous jobs
+	- Personal projects 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Planned Technologies
+	- Angular
+	- MySQL?
+	- Spring
+	- Apache
 
-## Code scaffolding
+## Tasks
+	[x] Git init
+	[x] Initialize Angular project
+	[x] Decide on the main components
+	[ ] Get home page to link to Another module
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Planned Project Structure
+- Components 
+	- User
+		*~ Skill Tree
+		*~ Jobs
+		*~ Contributions
+		*~ Visualizations
+		- CV
+		- Bio
+			* Username
+			* Name
+			* Job title
+			* Jobs[]
+		- Job
+			~ Projects
+			- SkillSummaries
+		- Contribution	
+			* Description
+			*~ Job
 
-## Build
+			- Project
+				- Github/Gitlab
+				*~ CodeBlocks[]
+				*~ Screenshots[]
+			- CodeBlock
+				~ Project
+			- Screenshot
+				~ Project
+			- Textual
+				~ Project
+		- SkillTree
+			~* Skills[]
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+			- Skill
+				* Examples[]
+					* Description
+					~ Contribution
+		- SkillVisualizations
+			- SkillBarGraph
+			- SkillMatrix
+		- Profile
+			- Layout (components can be rearranged)
+	- Search
+	- Login
+- Services
+	- AuthService	
+	- SearchService
+	- ProfileEditorService
