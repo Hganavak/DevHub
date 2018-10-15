@@ -1,9 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    {{ title }}
+    <a routerLink="/home" routerLinkActive="active">{{ title }}</a>
   </h1>
 <nav>
   <a routerLink="/user" routerLinkActive="active">User</a>
 </nav>
+<hr />
 <router-outlet></router-outlet>
