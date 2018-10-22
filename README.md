@@ -25,7 +25,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 	[x] Git init
 	[x] Initialize Angular project
 	[x] Decide on the main components
-	[ ] Get home page to link to Another module
+	[x] Get home page to link to Another module
 
 ## Planned Project Structure
 - Components 
